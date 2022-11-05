@@ -1,0 +1,142 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background-color: $dark-blue;
+    width: 88%;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    max-width: 41rem;
+
+    .star {
+      background-color: $medium-grey;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      padding: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 1.5rem;
+      }
+    }
+
+    .title {
+      font-size: 2.4rem;
+      color: $white;
+      margin-top: 2rem;
+    }
+
+    .text {
+      color: $light-grey;
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      margin-top: 1.2rem;
+    }
+
+    .rating-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .rating-btn {
+        color: $light-grey;
+        font-size: 1.3rem;
+        font-weight: 700;
+        background-color: $medium-grey;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.6rem;
+
+        div {
+          transform: translateY(15%);
+        }
+
+        &:hover {
+          background-color: $orange;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+
+      .active {
+        background-color: $light-grey;
+
+        div {
+          color: $white;
+        }
+      }
+    }
+
+    .submit-btn {
+      background-color: $orange;
+      width: 100%;
+      height: 4rem;
+      border-radius: 2.5rem;
+      margin-top: 2.6rem;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        transform: translateY(15%);
+        text-transform: uppercase;
+        color: $white;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+      }
+
+      &:hover {
+        background-color: $white;
+        div {
+          color: $orange;
+        }
+      }
+    }
+    .card-content2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 15rem;
+        margin-top: 1rem;
+      }
+
+      .text {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .result {
+        background-color: $medium-grey;
+        padding: 0.8rem 1.4rem;
+        border-radius: 2rem;
+        margin-top: 2.4rem;
+        margin-bottom: 0.6rem;
+
+        div {
+          color: $orange;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .hide {
+      display: none;
+    }
+  }
+}
